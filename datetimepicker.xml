@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>System - Lyquix Date-Time Picker</name>
+	<creationDate>April 2016</creationDate>
+	<author>Lyquix</author>
+	<authorEmail>info@lyquix.com</authorEmail>
+	<authorUrl>http://www.lyquix.com</authorUrl>
+	<copyright>(c) 2016 Lyquix</copyright>
+	<license>GNU/GPL</license>
+	<version>0.1.0</version>
+	<description>PLG_SYSTEM_LYQUIX_DATETIMEPICKER_XML_DESCRIPTION</description>
+	<media folder="media">
+		<folder>plg_system_datetimepicker</folder>
+	</media>
+	<files>
+		<filename plugin="datetimepicker">datetimepicker.php</filename>
+		<filename plugin="datetimepicker">index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_datetimepicker.ini</language>
+		<language tag="en-GB">en-GB.plg_system_datetimepicker.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="header_format" type="text" default="" label="PLG_SYSTEM_LYQUIX_DATETIMEPICKER_HEADER_FORMAT" description="PLG_SYSTEM_LYQUIX_DATETIMEPICKER_HEADER_FORMAT_DESC" />
+				<field name="week_number" type="radio" default="0" label="PLG_SYSTEM_LYQUIX_DATETIMEPICKER_WEEK_NUMBER" description="PLG_SYSTEM_LYQUIX_DATETIMEPICKER_WEEK_NUMBER_DESC" class="btn-group">
+					<option value="1">PLG_SYSTEM_LYQUIX_DATETIMEPICKER_YES</option>
+					<option value="0">PLG_SYSTEM_LYQUIX_DATETIMEPICKER_NO</option>
+				</field>
+				<field name="view_mode" type="radio" default="days" label="PLG_SYSTEM_LYQUIX_DATETIMEPICKER_VIEW_MODE" description="PLG_SYSTEM_LYQUIX_DATETIMEPICKER_VIEW_MODE_DESC" class="btn-group">
+					<option value="days">PLG_SYSTEM_LYQUIX_DATETIMEPICKER_DAYS</option>
+					<option value="months">PLG_SYSTEM_LYQUIX_DATETIMEPICKER_MONTHS</option>
+					<option value="years">PLG_SYSTEM_LYQUIX_DATETIMEPICKER_YEARS</option>
+				</field>
+				<field name="toolbar_position" type="radio" default="bottom" label="PLG_SYSTEM_LYQUIX_DATETIMEPICKER_TOOLBAR_POSITION" description="PLG_SYSTEM_LYQUIX_DATETIMEPICKER_TOOLBAR_POSITION_DESC" class="btn-group">
+					<option value="default">PLG_SYSTEM_LYQUIX_DATETIMEPICKER_DEFAULT</option>
+					<option value="top">PLG_SYSTEM_LYQUIX_DATETIMEPICKER_TOP</option>
+					<option value="bottom">PLG_SYSTEM_LYQUIX_DATETIMEPICKER_BOTTOM</option>
+				</field>
+				<field name="show_today" type="radio" default="0" label="PLG_SYSTEM_LYQUIX_DATETIMEPICKER_SHOW_TODAY" description="PLG_SYSTEM_LYQUIX_DATETIMEPICKER_SHOW_TODAY_DESC" class="btn-group btn-group-yesno">
+					<option value="1">PLG_SYSTEM_LYQUIX_DATETIMEPICKER_YES</option>
+					<option value="0">PLG_SYSTEM_LYQUIX_DATETIMEPICKER_NO</option>
+				</field>
+				<field name="show_clear" type="radio" default="0" label="PLG_SYSTEM_LYQUIX_DATETIMEPICKER_SHOW_CLEAR" description="PLG_SYSTEM_LYQUIX_DATETIMEPICKER_SHOW_CLEAR_DESC" class="btn-group btn-group-yesno">
+					<option value="1">PLG_SYSTEM_LYQUIX_DATETIMEPICKER_YES</option>
+					<option value="0">PLG_SYSTEM_LYQUIX_DATETIMEPICKER_NO</option>
+				</field>
+				<field name="show_close" type="radio" default="0" label="PLG_SYSTEM_LYQUIX_DATETIMEPICKER_SHOW_CLOSE" description="PLG_SYSTEM_LYQUIX_DATETIMEPICKER_SHOW_CLOSE_DESC" class="btn-group btn-group-yesno">
+					<option value="1">PLG_SYSTEM_LYQUIX_DATETIMEPICKER_YES</option>
+					<option value="0">PLG_SYSTEM_LYQUIX_DATETIMEPICKER_NO</option>
+				</field>
+				<field name="keep_open" type="radio" default="0" label="PLG_SYSTEM_LYQUIX_DATETIMEPICKER_KEEP_OPEN" description="PLG_SYSTEM_LYQUIX_DATETIMEPICKER_KEEP_OPEN_DESC" class="btn-group btn-group-yesno">
+					<option value="1">PLG_SYSTEM_LYQUIX_DATETIMEPICKER_YES</option>
+					<option value="0">PLG_SYSTEM_LYQUIX_DATETIMEPICKER_NO</option>
+				</field>
+				<field name="inline" type="radio" default="0" label="PLG_SYSTEM_LYQUIX_DATETIMEPICKER_INLINE" description="PLG_SYSTEM_LYQUIX_DATETIMEPICKER_INLINE_DESC" class="btn-group btn-group-yesno">
+					<option value="1">PLG_SYSTEM_LYQUIX_DATETIMEPICKER_YES</option>
+					<option value="0">PLG_SYSTEM_LYQUIX_DATETIMEPICKER_NO</option>
+				</field>
+				<field name="debug" type="radio" default="0" label="PLG_SYSTEM_LYQUIX_DATETIMEPICKER_DEBUG" description="PLG_SYSTEM_LYQUIX_DATETIMEPICKER_DEBUG_DESC" class="btn-group btn-group-yesno">
+					<option value="1">PLG_SYSTEM_LYQUIX_DATETIMEPICKER_YES</option>
+					<option value="0">PLG_SYSTEM_LYQUIX_DATETIMEPICKER_NO</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
