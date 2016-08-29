@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="2.5" type="plugin" group="system" method="upgrade">
 	<name>System - Lyquix Date-Time Picker</name>
-	<creationDate>April 2016</creationDate>
+	<creationDate>2016-08-29</creationDate>
 	<author>Lyquix</author>
 	<authorEmail>info@lyquix.com</authorEmail>
 	<authorUrl>http://www.lyquix.com</authorUrl>
 	<copyright>(c) 2016 Lyquix</copyright>
 	<license>GNU/GPL</license>
-	<version>0.1.0</version>
+	<version>1.0.0</version>
 	<description>PLG_SYSTEM_LYQUIX_DATETIMEPICKER_XML_DESCRIPTION</description>
 	<media folder="media">
 		<folder>plg_system_datetimepicker</folder>
