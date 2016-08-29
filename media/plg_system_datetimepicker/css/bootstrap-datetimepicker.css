@@ -120,6 +120,7 @@
 }
 .bootstrap-datetimepicker-widget .list-unstyled {
   margin: 0;
+  list-style: none;
 }
 .bootstrap-datetimepicker-widget a[data-action] {
   padding: 6px 0;
@@ -366,7 +367,7 @@
 }
 .bootstrap-datetimepicker-widget table td.active,
 .bootstrap-datetimepicker-widget table td.active:hover {
-  background-color: #337ab7;
+  background-color: #337ab7 !important;
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
