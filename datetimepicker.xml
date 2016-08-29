@@ -33,6 +33,12 @@
 					<option value="months">PLG_SYSTEM_LYQUIX_DATETIMEPICKER_MONTHS</option>
 					<option value="years">PLG_SYSTEM_LYQUIX_DATETIMEPICKER_YEARS</option>
 				</field>
+				<field name="use_default" type="radio" default="1" label="PLG_SYSTEM_LYQUIX_DATETIMEPICKER_USE_DEFAULT" description="PLG_SYSTEM_LYQUIX_DATETIMEPICKER_USE_DEFAULT_DESC" class="btn-group btn-group-yesno">
+					<option value="1" show_list = "format_off" hide_list="format_on" >PLG_SYSTEM_LYQUIX_DATETIMEPICKER_YES</option>
+					<option value="0" show_list="format_on" hide_list="format_off">PLG_SYSTEM_LYQUIX_DATETIMEPICKER_NO</option>
+				</field>
+				<field name="date_format" type="text" default="%Y-%m-%d" label="PLG_SYSTEM_LYQUIX_DATETIMEPICKER_DATE_FORMAT" description="PLG_SYSTEM_LYQUIX_DATETIMEPICKER_DATE_FORMAT_DESC" depend_class="format_on"/>
+				<field name="time_format" type="text" default="%H:%M:%S" label="PLG_SYSTEM_LYQUIX_DATETIMEPICKER_TIME_FORMAT" description="PLG_SYSTEM_LYQUIX_DATETIMEPICKER_TIME_FORMAT_DESC" depend_class="format_on"/>
 				<field name="toolbar_position" type="radio" default="bottom" label="PLG_SYSTEM_LYQUIX_DATETIMEPICKER_TOOLBAR_POSITION" description="PLG_SYSTEM_LYQUIX_DATETIMEPICKER_TOOLBAR_POSITION_DESC" class="btn-group">
 					<option value="default">PLG_SYSTEM_LYQUIX_DATETIMEPICKER_DEFAULT</option>
 					<option value="top">PLG_SYSTEM_LYQUIX_DATETIMEPICKER_TOP</option>
