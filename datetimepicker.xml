@@ -68,6 +68,7 @@
 					<option value="1">PLG_SYSTEM_LYQUIX_DATETIMEPICKER_YES</option>
 					<option value="0">PLG_SYSTEM_LYQUIX_DATETIMEPICKER_NO</option>
 				</field>
+				<field name="exclusions" type="textarea" default="" label="PLG_SYSTEM_LYQUIX_DATETIMEPICKER_EXCLUSIONS" description="PLG_SYSTEM_LYQUIX_DATETIMEPICKER_EXCLUSIONS_DESC" />
 			</fieldset>
 		</fields>
 	</config>

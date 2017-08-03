@@ -7,6 +7,21 @@ jimport('joomla.plugin.plugin');
 class plgSystemDatetimepicker extends JPlugin {
 
 	public function onAfterInitialise() {
+		// Check for exclusions
+		$plugin = JPluginHelper::getPlugin('system', 'datetimepicker');
+		$params = new JRegistry($plugin -> params);
+		$input = JFactory::getApplication() -> input;
+		if($params -> get('exclusions')) {
+			foreach(explode("\n", $params -> get('exclusions')) as $excLine) {
+				$matchCounter = 0;
+				$excLine = explode(',', $excLine);
+				foreach($excLine as $excPair) {
+					list($excType, $excValue) = explode('=', $excPair);
+					if($input -> get(trim($excType)) == trim($excValue)) $matchCounter++;
+				}
+				if($matchCounter == count($excLine)) return;
+			}
+		}
 		self::registerFunction();
 	}
 
@@ -89,6 +104,7 @@ class plgSystemDatetimepicker extends JPlugin {
 
 			// Add datetimepicker stylesheets and scripts
 			JHtml::_('stylesheet', 'media/plg_system_datetimepicker/css/bootstrap-datetimepicker.css');
+			JHtml::_('jquery.framework');
 			JHtml::_('script', 'media/plg_system_datetimepicker/js/bootstrap-datetimepicker.js', true);
 			
 			// Render js trigger
